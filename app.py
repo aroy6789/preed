@@ -11,7 +11,7 @@ model_Humidity = pickle.load(open('model_Humidity.pkl', 'rb'))
 model_windspeed = pickle.load(open('model_windspeed.pkl', 'rb'))
 
 #default page of our web-app
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('index.html')
     
